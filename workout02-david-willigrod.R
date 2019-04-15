@@ -1,11 +1,4 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+#Savings Calculator Application
 
 library(shiny)
 
@@ -159,7 +152,7 @@ server <- function(input, output) {
       
         #Plot with facetting
         ggplot(sliderValues1()) +
-            geom_line(aes(x = Year, y = Savings, color = Type)) + geom_point(aes(x = Year, y = Savings, color = Type)) + geom_area(aes(x = Year, y = Savings, fill = Type, show.legend = FALSE)) +
+            geom_line(aes(x = Year, y = Savings, color = Type)) + geom_point(aes(x = Year, y = Savings, color = Type)) + geom_area(aes(x = Year, y = Savings, fill = Type)) +
             labs(title = 'Different Types of Investing') + 
             facet_wrap (.~Type) +
             xlab('Year') +
