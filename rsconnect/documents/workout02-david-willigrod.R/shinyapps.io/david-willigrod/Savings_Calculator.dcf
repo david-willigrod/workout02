@@ -1,0 +1,12 @@
+name: Savings_Calculator
+title: Savings_Calculator
+username:
+account: david-willigrod
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 864987
+bundleId: 2011508
+url: https://david-willigrod.shinyapps.io/Savings_Calculator/
+when: 1555309043.69309
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,6 +1,9 @@
 #Savings Calculator Application
 
 library(shiny)
+library(rsconnect)
+library(ggplot2)
+library(tidyr)
 
 ui <- fluidPage(
    
@@ -72,8 +75,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
     
-    library(ggplot2)
-    library(tidyr)
+
     
     #Functions to Calculate 3 modes of savings
     future_value <- function(amount, rate, years){
